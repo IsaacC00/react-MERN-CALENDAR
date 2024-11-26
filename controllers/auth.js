@@ -124,6 +124,8 @@ const revalidarToken = async(req, res = response) => {
     res.status(200).json({
         ok: true,
         msg:'Token renovado', 
+        uid,
+        name,
         token
     });
 
